@@ -2,7 +2,6 @@
 
 
 {
-  "start": "node app.js",
   "name": "4.5-capstone-project-blog-application",
   "version": "1.0.0",
   "description": "Blog Web Application",
