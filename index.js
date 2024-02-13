@@ -4,12 +4,21 @@ import methodOverride from "method-override";
 import fs from "fs";
 import bodyParser from "body-parser";
 import { dirname } from "path";
+
+import path from "path";
+
 import { fileURLToPath } from "url";
+
 const __dirname = dirname(fileURLToPath(import.meta.url));
 let tit_list=[];
 var newBlog="";
 var del_flag=false;
 const app= express();
+
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'views'));
+
+
 const port=3000;
 app.listen(port,()=>{
     console.log(`Server is running on port ${port}`);
