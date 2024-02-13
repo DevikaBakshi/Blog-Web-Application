@@ -5,7 +5,6 @@ import fs from "fs";
 import bodyParser from "body-parser";
 import { dirname } from "path";
 import { fileURLToPath } from "url";
-app.set('views', 'views')
 const __dirname = dirname(fileURLToPath(import.meta.url));
 let tit_list=[];
 var newBlog="";
